@@ -33,8 +33,10 @@ Test Case 6: Краток cardNumber
 allItems = [Item("Item4", 100, 0, 1)]
 cardNumber = "123456"
 
+
 ###Тест случаи според критериумот Multiple Condition за условот
 if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
+
 Test 1: A = T, B = X, C = X
 Item test1 = new Item("item1", 5, 400, 0.0); 
 
