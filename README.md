@@ -33,3 +33,24 @@ Test Case 6: Краток cardNumber
 allItems = [Item("Item4", 100, 0, 1)]
 cardNumber = "123456"
 
+###Тест случаи според критериумот Multiple Condition за условот
+if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
+Test 1: A = T, B = X, C = X
+Item test1 = new Item("item1", 5, 400, 0.0); 
+
+Test Case 2: A = F, B = T, C = X
+Item test2 = new Item("item2", 5, 200, 0.2);
+
+Test Case 3: A = F, B = F, C = T
+Item test3 = new Item("item3", 15, 200, 0.0);
+
+Test Case 4: A = F, B = F, C = F
+Item test4 = new Item("item4", 5, 200, 0.0);
+
+###Unit тестовите ги напишав според следниве критериуми
+1. Null листа фрла exception и ја покрива првата if
+2. Празно име - фрла "Invalid item!" и ја покрива втората if
+3. Valid item со попуст - ја покрива пресметката со discount
+4. Valid item без попуст - ја покрива else гранката
+5. Invalid card number - ја покрива проверката на картичка
+6. Valid input
